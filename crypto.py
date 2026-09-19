@@ -7,3 +7,5 @@ def calculate_sha256(filepath: str) -> str:
         while chunk := f.read(CHUNK_SIZE):
             sha256.update(chunk)
     return sha256.hexdigest()
+
+# fire in the hole
